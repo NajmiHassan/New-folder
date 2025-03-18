@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Najmi Hassan</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .name {
+            font-size: 24px;
+            font-weight: normal;
+            color: #555;
+        }
+        .nav {
+            display: flex;
+        }
+        .nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #1a73e8;
+        }
+        .content {
+            display: flex;
+            gap: 30px;
+        }
+        .sidebar {
+            flex: 0 0 200px;
+        }
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .main {
+            flex: 1;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        h2 {
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+            color: #444;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .sidebar-info {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        .sidebar-title {
+            font-weight: bold;
+            margin-bottom: 0;
+        }
+        .sidebar-item {
+            margin-bottom: 15px;
+        }
+        .social-links {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        .social-links a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: #1a73e8;
+        }
+        .social-links a svg {
+            margin-right: 5px;
+        }
+        .footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            font-size: 14px;
+            color: #777;
+            text-align: center;
+        }
+        .footer a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 10px;
+        }
+        .footer-links a {
+            display: flex;
+            align-items: center;
+        }
+        .footer-links a svg {
+            margin-right: 5px;
+        }
+        /* .award-item {
+            margin-bottom: 15px;
+        }
+        .award-detail {
+            margin-left: 20px;
+            color: #555;
+        } */
+        .award-item a {
+            color: #3e88ea; /* Purple color for all achievement links */
+            text-decoration: none;
+        }
+
+        .award-item a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 class="name">Najmi Hassan</h1>
+        <div class="nav">
+            <a href="projects.html">Projects</a>
+            <a href="teaching.html">Teaching</a>
+        </div>
+    </div>
+    <div class="content">
+        <div class="sidebar">
+            <img src="/api/placeholder/150/150" alt="Profile Picture" class="profile-pic">
+            <div class="sidebar-item">
+                <p class="sidebar-title">Najmi Hassan</p>
+                <p class="sidebar-info">Sofrware Engineer</p>
+            </div>
+            <div class="sidebar-item">
+                <p class="sidebar-info">Location</p>
+            </div>
+            <div class="social-links">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                        <rect x="2" y="9" width="4" height="12"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                    LinkedIn
+                </a>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                    </svg>
+                    GitHub
+                </a>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                    Instagram
+                </a>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                    </svg>
+                    Twitter
+                </a>
+                <a href="mailto:your.email@example.com">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                    Email
+                </a>
+                <a href="path/to/your/cv.pdf" download>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                        <polyline points="14 2 14 8 20 8"></polyline>
+                        <line x1="16" y1="13" x2="8" y2="13"></line>
+                        <line x1="16" y1="17" x2="8" y2="17"></line>
+                        <polyline points="10 9 9 9 8 9"></polyline>
+                    </svg>
+                    CV & Transcript
+                </a>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="section">
+                <h2>About Me</h2>
+                <p>
+                    Passionate Software Engineer with a strong foundation in Python and Machine <Label></Label>earning, 
+                    dedicated to building innovative AI-driven solutions. Constantly exploring 
+                    cutting-edge technologies to transform ideas into impactful applications.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>Achievements</h2>
+                <div class="award-item">
+                    <p><strong><a href="https://englishtest.duolingo.com/">Duolingo Score: 130</a></strong></p>
+                    <p class="award-detail">Achieved 130 score in Duolingo English test</p>
+                </div>
+                <div class="award-item">
+                    <p><strong><a href="#">Merit Scholarship Winner</a></strong></p>
+                    <p class="award-detail">Awarded 40% fee waiver throughout the bachelors degree for achieving 1st position in Merit Scholarship test</p>
+                </div>
+                <div class="award-item">
+                    <p><strong><a href="https://cs50.harvard.edu/x/2024/puzzles/">Harvard CS50x Puzzle Day</a></strong></p>
+                    <p class="award-detail">1st position after solving 9/9 puzzles in Harvard CS50x Puzzle Day</p>
+                </div>
+                <div class="award-item">
+                    <p><strong><a href="https://calico.berkeley.edu/">UC Berkeley Coding Competition</a></strong></p>
+                    <p class="award-detail">Participation in well known international UC Berkeley CALICO contest and solving coding questions</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Research Interests</h2>
+                <ol>
+                    <li>Machine Learning</li>
+                    <li>Deep Learning</li>
+                    <li>Natutral Language Processing</li>
+                    <li>Computer Vision</li>
+                    <li>Data Science</li>
+                    <li>Health Informatics</li>
+                    <li>Bioinformatics</li>
+                </ol>
+            </div>
+
+
+            <div class="section">
+                <h2>Education</h2>
+                <ul>
+                    <li>
+                        <strong>Bachelor of Science in Software Engineering</strong>, <a href="https://mul.edu.pk/">Minhaj University</a>, [Oct 2020 - Oct 2024]
+                        <p>CGPA: 3.67/4.00</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© 2025 Najmi Hassan. All rights reserved.</p>
+        <div class="footer-links">
+            
+        </div>
+    </div>
+</body>
+</html>
